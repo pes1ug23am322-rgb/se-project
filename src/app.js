@@ -1,3 +1,4 @@
+// BTPC-7 PDF Generation Story Marker
 // BTPC-4 PDF Generation - commit marker
 // src/app.js
 // Full server: POST /convert (returns JSON + stores cleaned content)
