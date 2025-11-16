@@ -1,3 +1,4 @@
+// BTPC-3: Sanitizing HTML content for PDF use
 // BTPC-2: fetchBlog now includes timeout + headers
 // BTPC-2: Network layer responsible for external blog fetch
 // BTPC-2 Fetch Blog Content - small comment to register commit
