@@ -1,3 +1,4 @@
+// BTPC-1: Handles receiving blog URL from user
 // Added documentation comments for clarity – commit improvement
 // BTPC-7 PDF Generation Story Marker
 // BTPC-4 PDF Generation - commit marker
