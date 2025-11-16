@@ -1,3 +1,4 @@
+// BTPC-2 Fetch Blog Content - small comment to register commit
 /*
   src/services.js
   REAL blog fetch using built-in fetch (Node 18+)
