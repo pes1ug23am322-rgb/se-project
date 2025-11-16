@@ -1,4 +1,5 @@
 // BTPC-2 Fetch Blog Content - small comment to register commit
+// BTPC-3 Clean HTML Content - commit marker
 /*
   src/services.js
   REAL blog fetch using built-in fetch (Node 18+)
