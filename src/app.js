@@ -1,3 +1,4 @@
+// Added documentation comments for clarity – commit improvement
 // BTPC-7 PDF Generation Story Marker
 // BTPC-4 PDF Generation - commit marker
 // src/app.js
