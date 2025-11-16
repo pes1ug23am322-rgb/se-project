@@ -1,3 +1,4 @@
+// BTPC-4 PDF Generation - commit marker
 // src/app.js
 // Full server: POST /convert (returns JSON + stores cleaned content)
 // GET /download.pdf?id=...   (streams real PDF from stored cleaned content)
