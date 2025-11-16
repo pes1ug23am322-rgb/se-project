@@ -1,20 +1,3 @@
-// BTPC-5: Styled header for converted PDF
-// BTPC-5: Writing PDF metadata (title + URL)
-// BTPC-4: Completed writing PDF stream
-// BTPC-4: Generating PDF using PDFKit
-// BTPC-2: Calling fetchBlog service here
-// BTPC-1: Handles receiving blog URL from user
-// Added documentation comments for clarity – commit improvement
-// BTPC-7 PDF Generation Story Marker
-// BTPC-4 PDF Generation - commit marker
-// src/app.js
-// Full server: POST /convert (returns JSON + stores cleaned content)
-// GET /download.pdf?id=...   (streams real PDF from stored cleaned content)
-// GET /download.pdf?url=...  (fetch+clean+stream on the fly)
-// GET /health
-//
-// Requires Node 18+ (uses global fetch) and pdfkit installed.
-
 const express = require('express');
 const path = require('path');
 const PDFDocument = require('pdfkit');

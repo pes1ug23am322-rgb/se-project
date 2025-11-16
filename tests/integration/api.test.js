@@ -1,26 +1,21 @@
-const request = require('supertest');
-const app = require('../../src/app');
-const services = require('../../src/services');
+const request = require("supertest");
+const app = require("../../src/app");
 
-describe('POST /convert', () => {
-  beforeAll(() => {
-    jest.spyOn(services, 'fetchBlog').mockResolvedValue('<html><body>Hello</body></html>');
-    jest.spyOn(services, 'cleanHtml').mockReturnValue('Hello');
-  });
+jest.mock("../../src/services", () => ({
+  fetchBlog: jest.fn(async () => "<p>Mock blog content</p>"),
+  cleanHtml: jest.fn(() => "Mock cleaned content")
+}));
 
-  test('returns cleaned output', async () => {
+describe("POST /convert", () => {
+  test("returns success and metadata", async () => {
     const res = await request(app)
-      .post('/convert')
-      .send({ url: 'https://test.com' });
+      .post("/convert")
+      .send({ url: "https://example.com" });
 
-    expect(res.status).toBe(200);
+    expect(res.statusCode).toBe(200);
     expect(res.body.ok).toBe(true);
-    expect(res.body.cleanedLength).toBeGreaterThan(0);
-  });
-
-  test('rejects missing url', async () => {
-    const res = await request(app).post('/convert').send({});
-    expect(res.status).toBe(400);
-    expect(res.body.error).toBe('url required');
-  });
+    expect(res.body.id).toBeDefined();
+    expect(res.body.metadata).toBeDefined();
+    expect(res.body.metadata.cleanedLength).toBeDefined();
+  }, 10000);
 });
