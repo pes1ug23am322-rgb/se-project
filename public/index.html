@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Blog to PDF Converter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <h2 class="logo">Blog → PDF Converter</h2>
+    </div>
+
+    <div class="nav-right">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+
+      <!-- SMALL ICON DARK MODE -->
+      <button id="themeToggle" class="theme-btn">🌙</button>
+    </div>
+  </nav>
+
+  <!-- MAIN CONVERTER CARD -->
+  <div class="container">
+    <div class="card">
+      <h2>Convert Blog to PDF</h2>
+      <p>Enter any blog/article URL and convert it into a downloadable PDF.</p>
+
+      <input type="text" id="urlInput" placeholder="Enter blog URL..." />
+
+      <button id="convertBtn">Convert</button>
+
+      <p id="statusText" class="status"></p>
+
+      <a id="downloadLink" class="download-btn" style="display:none;">
+        Download PDF
+      </a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
