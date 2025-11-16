@@ -1,3 +1,4 @@
+// BTPC-2: Calling fetchBlog service here
 // BTPC-1: Handles receiving blog URL from user
 // Added documentation comments for clarity – commit improvement
 // BTPC-7 PDF Generation Story Marker
