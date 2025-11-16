@@ -1,3 +1,4 @@
+# BTPC-7: CI pipeline for automated test + coverage
 name: CI - Tests and Quality Checks
 
 on:
