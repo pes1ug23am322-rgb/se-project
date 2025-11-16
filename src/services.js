@@ -1,3 +1,4 @@
+// BTPC-2: fetchBlog now includes timeout + headers
 // BTPC-2 Fetch Blog Content - small comment to register commit
 // BTPC-3 Clean HTML Content - commit marker
 /*
